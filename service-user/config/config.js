@@ -4,7 +4,8 @@ const {
   DB_HOST,
   DB_PASSWORD,
   DB_USERNAME,
-  DB_NAME
+  DB_NAME,
+  DB_PORT
 } = process.env;
 
 module.exports = {
@@ -12,6 +13,7 @@ module.exports = {
     "username": DB_USERNAME,
     "password": DB_PASSWORD,
     "database": DB_NAME,
+    "port": DB_PORT,
     "host": DB_HOST,
     "dialect": "mysql"
   },
@@ -20,6 +22,7 @@ module.exports = {
     "password": DB_PASSWORD,
     "database": DB_NAME,
     "host": DB_HOST,
+    "port": DB_PORT,
     "dialect": "mysql"
   },
   "production": {
@@ -27,6 +30,7 @@ module.exports = {
     "password": DB_PASSWORD,
     "database": DB_NAME,
     "host": DB_HOST,
+    "port": DB_PORT,
     "dialect": "mysql"
   }
 }
